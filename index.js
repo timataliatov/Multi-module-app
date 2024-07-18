@@ -1,7 +1,3 @@
-
-
-
-
 import { fetchProducts } from "./modules/network.js";
 import { displayProducts } from "./modules/ui.js";
 import { getCart, addToCart } from "./modules/storage.js";
