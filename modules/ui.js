@@ -1,6 +1,10 @@
 import { addToCart } from "./storage.js";
 
 export function createProductCard(product) {
+  if (!product) {
+    throw new Error("Product cannot be null or undefined");
+  }
+
   const card = document.createElement("div");
   card.className = "bg-white p-4 rounded-lg shadow-md";
 
@@ -33,6 +37,10 @@ export function createProductCard(product) {
 }
 
 export function displayProducts(products) {
+  if (!products) {
+    throw new Error("Products cannot be null or undefined");
+  }
+
   const productsContainer = document.getElementById("products");
   productsContainer.innerHTML = "";
   products.forEach((product) => {
@@ -40,3 +48,7 @@ export function displayProducts(products) {
     productsContainer.appendChild(productCard);
   });
 }
+
+
+
+
