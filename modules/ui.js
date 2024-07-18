@@ -1,3 +1,7 @@
+
+
+
+
 import { addToCart } from "./storage.js";
 
 export function createProductCard(product) {

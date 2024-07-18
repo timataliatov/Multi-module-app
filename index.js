@@ -1,3 +1,7 @@
+
+
+
+
 import { fetchProducts } from "./modules/network.js";
 import { displayProducts } from "./modules/ui.js";
 import { getCart, addToCart } from "./modules/storage.js";
@@ -10,7 +14,7 @@ async function init() {
     }
     displayProducts(products);
 
-    // Display initial cart content if needed
+
     const cart = getCart();
     if (cart) {
       console.log(cart);
